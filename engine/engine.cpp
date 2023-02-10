@@ -38,6 +38,7 @@ int main(int argc, char **argv)
 	
 	Deck deck;
 	
+	
 	// lets work on dealing a hand to everyone
 	
 }
