@@ -1,3 +1,7 @@
+# .gitignore for PokerAI
+
 # We don't want to use the .o files
 *.o
 
+# We don't want any .swp files
+*.swp
