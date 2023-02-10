@@ -11,7 +11,7 @@ public:
 	Player();
 	Player(int card1, int card2);
 	int getCard(int cardNumber);
-	bool isHandFull();
+	bool isCardNeeded();
 	void receiveCard(int card);
 private:
 	int hand[2];
