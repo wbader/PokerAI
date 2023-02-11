@@ -21,14 +21,11 @@ Player::Player(int card1, int card2)
 {
 	handNotFull = true;
 	currentHandPosition = 0;
-	try
-	{
-		receiveCard(card1);
-		receiveCard(card2);
-	}
-	catch 
-	{
-	}
+	
+	//use try-catch here?
+	receiveCard(card1);
+	receiveCard(card2);
+	
 }
 
 void Player::receiveCard(int card)
