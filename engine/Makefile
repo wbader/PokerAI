@@ -23,8 +23,11 @@ engine.o: engine.cpp
 deck.o: deck.cpp deck.h
 	$(CC) $(CFLAGS) -c deck.cpp
 
-engine: engine.o deck.o
-	$(CC) $(CFLAGS) -o $(TARGET) engine.o deck.o
+player.o: player.cpp player.h
+	$(CC) $(CFLAGS) -c player.cpp
+
+engine: engine.o deck.o player.o
+	$(CC) $(CFLAGS) -o $(TARGET) engine.o deck.o player.o
 
 debug: DEBUG_FLAGS = -g -DDEBUG
 debug: clean $(TARGET)

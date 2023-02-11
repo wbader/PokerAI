@@ -23,6 +23,7 @@
 #include "deck.h"
 #include <time.h>
 #include <stdlib.h>
+#include "player.h"
 
 using namespace std;
 
@@ -30,7 +31,7 @@ std::string convertIntToCard(int cardInt);
 
 float version = 0.01;
 
-int main(int argc, char **argv)
+int main() //(int argc, char **argv)  saved for later usage, but this way there are no warning during compile
 {
 	printf("Welcome to poker engine v%2.2f\n",version);
 	
