@@ -13,16 +13,14 @@ using namespace std;
 
 Player::Player()
 {
-	handNotFull = true;
-	currentHandPosition = 0;
+	clearHand();
 }
 
 Player::Player(int card1, int card2)
 {
-	handNotFull = true;
-	currentHandPosition = 0;
+	clearHand();
 	
-	//use try-catch here?
+	//use try-catch here? or where the Player gets initiated
 	receiveCard(card1);
 	receiveCard(card2);
 	
@@ -38,6 +36,7 @@ void Player::receiveCard(int card)
 	{
 		throw out_of_range("Hand already contains enough cards");
 	}
+
 	hand[currentHandPosition++]=card;
 	if(currentHandPosition >= 2)
 		handNotFull = false;
@@ -64,4 +63,10 @@ int Player::getCard(int cardNumber)
 	}
 	
 	return hand[cardNumber];	
+}
+
+void Player::clearHand()
+{
+	handNotFull = true;
+	currentHandPosition = 0;
 }

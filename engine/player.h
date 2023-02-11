@@ -13,6 +13,7 @@ public:
 	int getCard(int cardNumber);
 	bool isCardNeeded();
 	void receiveCard(int card);
+	void clearHand();
 private:
 	int hand[2];
 	const int sizeOfHand = 2;
