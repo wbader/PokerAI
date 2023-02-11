@@ -14,16 +14,36 @@ using namespace std;
 Player::Player()
 {
 	clearHand();
+	stackSize = 0;
+}
+
+Player::Player(int startingStackSize)
+{
+	clearHand();
+	stackSize = 0;
+	updateStackSize(startingStackSize);
 }
 
 Player::Player(int card1, int card2)
 {
-	clearHand();
+	clearHand()
+	stackSize = 0;
 	
 	//use try-catch here? or where the Player gets initiated
 	receiveCard(card1);
 	receiveCard(card2);
 	
+}
+
+Player::Player(int card1, int card2, int startingStackSize)
+{
+	clearHand();
+	stackSize = 0;
+
+	updateStackSize(startingStackSize);
+	receiveCard(card1);
+	receiveCard(card2);
+
 }
 
 void Player::receiveCard(int card)
@@ -69,4 +89,13 @@ void Player::clearHand()
 {
 	handNotFull = true;
 	currentHandPosition = 0;
+}
+
+void Player::updateStackSize(int changeStackByThisAmount)
+{
+	if ((stackSize + changeStackByThisAmount) < 0)
+		throw out_of_range("Stack size doesn't have enough to remove");
+
+	stackSize += changeStackByThisAmount;
+	return;
 }
