@@ -38,7 +38,7 @@ void Player::receiveCard(int card)
 	{
 		throw out_of_range("Hand already contains enough cards");
 	}
-	hand[currentHandPosition++]=card1;
+	hand[currentHandPosition++]=card;
 	if(currentHandPosition >= 2)
 		handNotFull = false;
 	
