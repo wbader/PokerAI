@@ -11,6 +11,8 @@
 
 using namespace std;
 
+// This is for committing purpose
+
 Player::Player()
 {
 	handNotFull = true;
