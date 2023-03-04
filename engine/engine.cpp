@@ -70,7 +70,7 @@ int main() //(int argc, char **argv)  saved for later usage, but this way there 
 
 	for (int i = 0; i < 9; i++)
 	{
-		cout << "Player " << i << ": " << (playerHands[i][0]) << " " << (playerHands[i][1]) << endl;
+		cout << "Player " << i << ": " << convertIntToCard(playerHands[i][0]) << " " << convertIntToCard(playerHands[i][1]) << endl;
 	}
 }
 
