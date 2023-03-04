@@ -72,6 +72,16 @@ int main() //(int argc, char **argv)  saved for later usage, but this way there 
 	{
 		cout << "Player " << i << ": " << convertIntToCard(playerHands[i][0]) << " " << convertIntToCard(playerHands[i][1]) << endl;
 	}
+
+	cout << "Flop    : ";
+	for (int i = 0; i < 3; i++)
+	{
+		cout << convertIntToCard(flop[i]) << " ";
+	}
+	cout << endl;
+
+	cout << "Turn    : " << convertIntToCard(turn) << endl;
+	cout << "River   : " << convertIntToCard(river) << endl;
 }
 
 std::string convertIntToCard(int cardInt)
