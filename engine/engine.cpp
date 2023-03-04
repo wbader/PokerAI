@@ -63,7 +63,10 @@ int main() //(int argc, char **argv)  saved for later usage, but this way there 
 	int turn = deck[locationInDeck++];
 	int river = deck[locationInDeck++];
 
-
+	for (int i = 0; i < 9; i++)
+	{
+		cout << "Player " << i << ": " << convertIntToCard(playerHands[i][0]) << " " << convertIntToCard(playerHands[i][1]) << endl;
+	}
 }
 
 std::string convertIntToCard(int cardInt)
