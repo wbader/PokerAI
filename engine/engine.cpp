@@ -37,11 +37,33 @@ int main() //(int argc, char **argv)  saved for later usage, but this way there 
 	
 	srand(time(NULL));  // get a seed at startup?  we'd be able to use the same seed for multiple tables that way, see if that affects the outcome
 	
-	Deck deck;
-	
-	
-	// lets work on dealing a hand to everyone
-	
+	int deck[52];
+
+	for (int i = 0; i < 52; i++)
+	{
+		int randomLocationInDeck = (rand() % (52 - i)) + i;
+		deck[i] = deck[randomLocationInDeck];
+	}
+	int locationInDeck = 0;
+
+	int playerHands[9][2];
+
+	for (int i = 0; i < 9; i++);
+	{
+		playerHands[i][0] = deck[locationInDeck++];
+		playerHands[i][1] = deck[locationInDeck++];
+	}
+
+	int flop[3];
+	for (int i = 0; i < 3; i++)
+	{
+		flop[i] = deck[locationInDeck++];
+	}
+
+	int turn = deck[locationInDeck++];
+	int river = deck[locationInDeck++];
+
+
 }
 
 std::string convertIntToCard(int cardInt)
