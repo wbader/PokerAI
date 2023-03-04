@@ -48,7 +48,7 @@ int main() //(int argc, char **argv)  saved for later usage, but this way there 
 
 	int playerHands[9][2];
 
-	for (int i = 0; i < 9; i++);
+	for (int i = 0; i < 9; i++)
 	{
 		playerHands[i][0] = deck[locationInDeck++];
 		playerHands[i][1] = deck[locationInDeck++];
