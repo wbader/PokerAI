@@ -26,7 +26,7 @@ Player::Player(int startingStackSize)
 
 Player::Player(int card1, int card2)
 {
-	clearHand()
+	clearHand();
 	stackSize = 0;
 	
 	//use try-catch here? or where the Player gets initiated
