@@ -41,6 +41,11 @@ int main() //(int argc, char **argv)  saved for later usage, but this way there 
 
 	for (int i = 0; i < 52; i++)
 	{
+		deck[i] = i;
+	}
+
+	for (int i = 0; i < 52; i++)
+	{
 		int randomLocationInDeck = (rand() % (52 - i)) + i;
 		deck[i] = deck[randomLocationInDeck];
 	}
