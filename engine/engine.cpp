@@ -151,4 +151,20 @@ std::string convertIntToCard(int cardInt)
 	
 	return retString;	
 }
+
+int bestFiveCardPokerHandFromSevenCards()
+{
+	// sort cards by value
+	//lookForStraitFlush();
+	//lookForFourOfAKind();
+	//lookForFullHouse();
+	//lookForFlush();
+	//lookForStrait();
+	//lookForThreeOfAKind();
+	//lookForTwoPair();
+	//lookForOnePair();
+	//lookForHighCard();
+
+	return 0;
+}
    
