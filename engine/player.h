@@ -4,6 +4,7 @@
    Player class header.  
 */
    
+#pragma once
 
 class Player {
 
