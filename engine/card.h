@@ -22,17 +22,17 @@ public:
 	bool operator <=(const Card& c);  // These will not care about suit
 	bool operator >=(const Card& c);  // These will not care about suit
 	bool setCard(int newCardNumber);
-	bool isSet() { return set };
+	bool isSet() { return set; };
 	bool isSameSuit(const Card& c);
 	bool isPreviousRank(const Card& c);  // To check for straits
 	bool isNextRank(const Card& c);		 // Don't know if I'll need both
-	void clear() { isSet = false; };
+	void clear() { set = false; };
 private:
 	int cardNumber;
 	Rank rank;
 	Suit suit;
 	bool set;
-	void updateRankAndSuit() { rank = cardNumber % 13; suit = cardNumber % 4; };
+	void updateRankAndSuit() { rank = <Rank>(cardNumber % 13); suit = <Suit>(cardNumber % 4); };
 };
 
 
