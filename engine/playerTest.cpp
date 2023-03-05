@@ -13,5 +13,8 @@
 
 TEST_CASE("The Player class checks for bad input")
 {
-
+	SUBCASE("Generic Player()")
+	{
+		Player player = new Player();
+	}
 }
