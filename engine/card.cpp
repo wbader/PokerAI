@@ -144,7 +144,7 @@ bool Card::setCard(int newCardNumber)
 
 bool Card::isSameSuit(const Card& c)
 {
-	if (Card::suit = c.suit)
+	if (Card::suit == c.suit)
 		return true;
 	else
 		return false;
