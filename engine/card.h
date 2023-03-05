@@ -32,7 +32,7 @@ private:
 	Rank rank;
 	Suit suit;
 	bool set;
-	void updateRankAndSuit() { rank = <Rank>(cardNumber % 13); suit = <Suit>(cardNumber % 4); };
+	void updateRankAndSuit() { rank = (Rank)(cardNumber % 13); suit = (Suit)(cardNumber % 4); };
 };
 
 
