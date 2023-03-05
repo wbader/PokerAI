@@ -14,7 +14,7 @@ TEST_CASE("The Card class initializion tests")
 {
 	SUBCASE("Card class uninitialized")
 	{
-		Card card = new Card();
+		Card card;
 		SUBCASE("unitialized card isn't set")
 		{
 			CHECK(card.isSet() == false);
@@ -28,7 +28,7 @@ TEST_CASE("The Card class initializion tests")
 	}
 	SUBCASE("Card class initialized to 0 = 2d")
 	{
-		Card card = new Card(0);
+		Card card = 0;
 		SUBCASE("initialize card should be set")
 		{
 			CHECK(card.isSet() == true);
