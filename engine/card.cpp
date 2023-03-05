@@ -71,16 +71,16 @@ std::ostream& operator<<(std::ostream& os, const Card& c)
 	switch (c.suit)
 	{
 	case 0:
-		suit = 'D';
+		suit = 'd';
 		break;
 	case 1:
-		suit = 'C';
+		suit = 'c';
 		break;
 	case 2:
-		suit = 'H';
+		suit = 'h';
 		break;
 	case 3:
-		suit = 'S';
+		suit = 's';
 		break;
 	}
 	switch (c.rank)
