@@ -15,7 +15,7 @@ public:
 	Card(int newCardNumber);
 	Card();
 	~Card();
-	friend ostream& operator <<(ostream& os, const Card& c);
+	friend std::ostream& operator <<(std::ostream& os, const Card& c);
 	bool operator <(const Card& c);   // These will not care about suit, only rank
 	bool operator >(const Card& c);   // These will not care about suit
 	bool operator ==(const Card& c);  // These will not care about suit

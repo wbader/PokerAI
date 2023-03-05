@@ -64,7 +64,7 @@ bool Card::operator>=(const Card& c)
 	return false;
 }
 
-ostream& operator<<(ostream& os, const Card& c)
+std::ostream& operator<<(std::ostream& os, const Card& c)
 {
 
 	char rank, suit;
