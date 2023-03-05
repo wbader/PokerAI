@@ -10,13 +10,13 @@
 Card::Card(int newCardNumber)
 {
 	Card::cardNumber = newCardNumber;
-	Card::isSet = true;
+	Card::set = true;
 	Card::updateRankAndSuit();
 }
 
 Card::Card()
 {
-	Card::isSet = false;
+	Card::set = false;
 }
 
 Card::~Card()
@@ -132,11 +132,11 @@ ostream& operator<<(ostream& os, const Card& c)
 
 bool Card::setCard(int newCardNumber)
 {
-	if(isSet)
+	if(set)
 		return false;
 
 	Card::cardNumber = newCardNumber;
-	Card::isSet = true;
+	Card::set = true;
 	Card::updateRankAndSuit();
 
 	return true;
